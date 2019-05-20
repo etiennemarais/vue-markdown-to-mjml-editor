@@ -1,4 +1,4 @@
-# vue-bulma-starter-app
+# vue-markdown-to-mjml-editor
 
 ## Project setup
 ```
@@ -7,18 +7,12 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn run serve
+yarn start
 ```
 
 ### Compiles and minifies for production
 ```
 yarn run build
-yarn start # To test locally using a http-server
-```
-
-### Run your tests
-```
-yarn run test
 ```
 
 ### Lints and fixes files
