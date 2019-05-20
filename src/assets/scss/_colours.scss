@@ -1,0 +1,13 @@
+$grey-heading: hsl(0, 0%, 28%) !default; //#484848
+$grey-lightest: hsl(0, 0%, 91%) !default;
+$grey-cool: #f9f9f9 !default;
+$warning: rgb(255, 64, 94) !default;
+$warning-invert: $white !default;
+// $hover-color: #8FB1DC !default;
+$shadow-blue: #7C90A0 !default;
+$dark-gunmetal: #1E2328 !default;
+$primary: #A0D0D2 !default;
+
+.has-background-grey-lightest {
+    background-color: $grey-lightest;
+}

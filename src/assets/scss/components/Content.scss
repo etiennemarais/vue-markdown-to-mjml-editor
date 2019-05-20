@@ -1,0 +1,110 @@
+/* Editor styles */
+@import '~simplemde/dist/simplemde.min.css';
+
+.editor-container {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid $grey-lighter;
+    height: 100vh;
+
+    .CodeMirror {
+        border: none;
+        height: 100%;
+        padding-left: 45px;
+        padding-right: 45px;
+        font-family: Consolas, monaco, monospace;
+    }
+
+    /* Prevent confusing select behaviour, see https://github.com/TryGhost/Ghost/issues/9356 */
+    .CodeMirror-code:not([contenteditable="true"]) {
+        user-select: none;
+    }
+
+    .editor-workspace {
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: relative;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .editor-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 46px;
+        min-height: 46px;
+        border-top: 1px solid $grey-lighter;
+        background: $white;
+
+        .editor-toolbar {
+            border: none;
+            border-radius: 0;
+            opacity: 1;
+        }
+
+        .editor-toolbar:before,
+        .editor-toolbar:after {
+            content: none;
+        }
+
+        .editor-toolbar a:focus {
+            outline: none;
+        }
+    }
+}
+
+.template-preview {
+    background-color: $white;
+    position: relative;
+    flex-grow: 1;
+    display: flex !important;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0;
+    span.responsive {
+        margin: 0 15px;
+        cursor: pointer;
+
+        &.is-selected {
+            border-bottom: 1px solid $grey-light;
+        }
+
+        i {
+            font-size: $text-lg;
+            cursor: pointer;
+        }
+    }
+
+    .continue-button {
+        position: absolute;
+        top: $text-xs;
+        right: $text-xs;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+
+        &.is-mobile {
+            width: 320px;
+            margin: 0 auto;
+        }
+
+        &.is-tablet {
+            width: 600px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.card {
+    &.image-upload {
+        border: 0;
+    }
+}

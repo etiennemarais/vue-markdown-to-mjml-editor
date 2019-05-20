@@ -1,0 +1,60 @@
+// Import business fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+@import "node_modules/bulma/sass/utilities/initial-variables";
+@import "node_modules/bulma/sass/utilities/functions";
+
+$border: $grey-lighter !default;
+@import "node_modules/bulma/sass/utilities/mixins";
+
+// Import Business main color scheme
+@import "_colours";
+
+/** Application variables and overrides */
+$family-primary: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$body-background-color: hsl(0, 0%, 98%) !default;
+$body-size: 16px !default;
+$body-rendering: optimizeLegibility !default;
+$body-family: $family-primary !default;
+$body-color: $grey-heading !default;
+$body-line-height: 1.618 !default;
+
+$card-shadow: 0;
+
+$weight-boldest: 900 !default;
+
+$hr-background-color: hsl(0, 0%, 95%) !default;
+$hr-height: 1px !default;
+
+$table-background-color: $body-background-color !default;
+$table-cell-border: 0 !default;
+$table-cell-padding: 0.5em 0;
+
+$weight-hairline: 100 !default;
+$weight-lighter: 200 !default;
+
+/* Framework overrides */
+$navbar-box-shadow-size: 0;
+
+@import "node_modules/bulma/sass/utilities/derived-variables";
+@import "node_modules/bulma/sass/utilities/controls";
+@import "node_modules/bulma/sass/utilities/animations";
+
+/** Framework overrides */
+$link: $grey-heading;
+$ultra-widescreen: 1680px + (2 * $gap) !default;
+
+$text-3xs: .25rem;
+$text-2xs: .50rem;
+$text-xs: .75rem;
+$text-sm: .875rem;
+$text-base: 1rem;
+$text-lg: 1.125rem;
+$text-xl: 1.25rem;
+$text-2xl: 1.5rem;
+$text-3xl: 1.875rem;
+$text-4xl: 2.25rem;
+$text-5xl: 3rem;
+$text-6xl: 3.25rem;
+$text-7xl: 3.5rem;
+$text-8xl: 4.2rem;
