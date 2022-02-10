@@ -33,7 +33,7 @@
     "@vue/cli-plugin-pwa": "^3.7.0",
     "@vue/cli-service": "^3.7.0",
     "http-server": "^0.11.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.5.21",
     "cors": "^2.8.4",
